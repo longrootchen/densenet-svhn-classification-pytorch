@@ -34,7 +34,7 @@ The DenseNet-250-BC model was trained for 40 epochs, achieving 1.82% error rate 
 
 Here is the confusion matrix for the test set.
 
-![Confusion matrix]()
+![Confusion matrix](https://github.com/longrootchen/densenet-svhn-classification-pytorch/blob/master/images/confusion_matrix.jpg)
 
 # References
 
