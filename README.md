@@ -1,15 +1,21 @@
-# Introduction
+# Re-implementation of ConvNets on SVHN classification task with PyTorch
 
-Here is a re-implementation of DenseNet-250-BC (k=24) on classification task for SVHN dataset (cropped digits) with PyTorch.
+Contact email: imdchan@yahoo.com
+
+## Introduction
+
+Here are some re-implementations of Convolutional Networks on SVHN dataset (cropped digits) dataset.
 
 SVHN dataset consists of 73,257 images of cropped digits (32 x 32) for train, 26,032 images for test and 531,131 extra samples.
 The common use is that selecting 400 images per class from the original 'train' set and 200 images per class from the 'extra' set for validation, resulting 6,000 images for validation, with the rest of 509,604 images for train.
 
-Contact email: imdchan@yahoo.com
-
 # Requirements
 
-A single TITAN RTX (24G momery) GPU was used.
+- A single TITAN RTX (24G momery) GPU was used.
+
+- Python 3.7+
+
+- PyTorch 1.0+
 
 # Usage
 
@@ -17,24 +23,19 @@ A single TITAN RTX (24G momery) GPU was used.
     
 # Train
 
-    python train.py
+    python -u train.py --work-dir ./experiments/densenet100_bc_k12 --resume ./experiments/densenet100_bc_k12/checkpoints/last_checkpoint.pth
     
 # Evaluation
 
-    python eval.py
+    python -u eval.py --work-dir ./experiments/densenet100_bc_k12 --ckpt-name last_checkpoint.pth
     
 # Results
 
 The DenseNet-250-BC model was trained for 40 epochs, achieving 1.82% error rate in the testing set.
 
-|  | error (%) |
-| ----- | ----- |
-| original paper | 1.74 |
-| re-implementation | 1.82 |
-
-Here is the confusion matrix for the test set.
-
-![Confusion matrix](https://github.com/longrootchen/densenet-svhn-classification-pytorch/blob/master/images/confusion_matrix.jpg)
+| Error Rate (%) | original paper | re-implementation |
+| ----- | ----- | ----- |
+| DenseNet-250-BC | 1.74 | 1.82 |
 
 # References
 
