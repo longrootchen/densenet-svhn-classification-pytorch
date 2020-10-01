@@ -9,7 +9,7 @@ Here are some re-implementations of Convolutional Networks on SVHN dataset (crop
 SVHN dataset consists of 73,257 images of cropped digits (32 x 32) for train, 26,032 images for test and 531,131 extra samples.
 The common use is that selecting 400 images per class from the original 'train' set and 200 images per class from the 'extra' set for validation, resulting 6,000 images for validation, with the rest of 509,604 images for train.
 
-# Requirements
+## Requirements
 
 - A single TITAN RTX (24G momery) GPU was used.
 
@@ -17,19 +17,19 @@ The common use is that selecting 400 images per class from the original 'train' 
 
 - PyTorch 1.0+
 
-# Usage
+## Usage
 
     git clone https://github.com/longrootchen/densenet-svhn-classification-pytorch
     
-# Train
+## Train
 
     python -u train.py --work-dir ./experiments/densenet100_bc_k12 --resume ./experiments/densenet100_bc_k12/checkpoints/last_checkpoint.pth
     
-# Evaluation
+## Evaluation
 
     python -u eval.py --work-dir ./experiments/densenet100_bc_k12 --ckpt-name last_checkpoint.pth
     
-# Results
+## Results
 
 The DenseNet-250-BC model was trained for 40 epochs, achieving 1.82% error rate in the testing set.
 
@@ -37,6 +37,6 @@ The DenseNet-250-BC model was trained for 40 epochs, achieving 1.82% error rate 
 | ----- | ----- | ----- |
 | DenseNet-250-BC | 1.74 | 1.82 |
 
-# References
+## References
 
 [1] Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger. Densely Connected Convolutional Networks. In CVPR, 2017.
