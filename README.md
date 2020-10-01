@@ -4,7 +4,7 @@ Contact email: imdchan@yahoo.com
 
 ## Introduction
 
-Here are some re-implementations of Convolutional Networks on SVHN dataset (cropped digits) dataset for classification.
+Here are some re-implementations of Convolutional Networks on SVHN dataset (cropped digits) classification.
 
 SVHN dataset consists of 73,257 images of cropped digits (32 x 32) for train, 26,032 images for test and 531,131 extra samples.
 The common use is that selecting 400 images per class from the original 'train' set and 200 images per class from the 'extra' set for validation, resulting 6,000 images for validation, with the rest of 509,604 images for train.
