@@ -19,13 +19,15 @@ The common use is that selecting 400 images per class from the original 'train' 
 
 ## Usage
 
+1. Clone this repository
+
     git clone https://github.com/longrootchen/densenet-svhn-classification-pytorch
     
-## Train
+2. Train a model, taking densenet100_bc_k12 as an example
 
     python -u train.py --work-dir ./experiments/densenet100_bc_k12 --resume ./experiments/densenet100_bc_k12/checkpoints/last_checkpoint.pth
     
-## Evaluation
+3. Evaluate a model, taking densenet100_bc_k12 as an example
 
     python -u eval.py --work-dir ./experiments/densenet100_bc_k12 --ckpt-name last_checkpoint.pth
     
