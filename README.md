@@ -37,7 +37,8 @@ The DenseNet-250-BC model was trained for 40 epochs, achieving 1.82% error rate 
 
 | Error Rate (%) | original paper | re-implementation |
 | ----- | ----- | ----- |
-| DenseNet-250-BC | 1.74 | 1.82 |
+| DenseNet-100-BC, k=12 | 1.76 [1] |  |
+| DenseNet-250-BC, k=24 | 1.74 [1] | 1.82 |
 
 ## References
 
